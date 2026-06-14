@@ -1,0 +1,61 @@
+site_name: Home Assistant-dokumentation
+site_description: Dokumentation för Home Assistant-systemet på Sännesholma
+site_author: Mikael van den Hoogen
+repo_url: https://github.com/MikaelHoogen/home-assistant-docs
+edit_uri: edit/main/docs/
+
+nav:
+  - Start: index.md
+  - Kom igång: kom-igang.md
+  - Systemöversikt: systemoversikt.md
+  - Arkitektur:
+      - Översikt: arkitektur/oversikt.md
+      - Repo-struktur: arkitektur/repo-struktur.md
+      - Principer: arkitektur/principer.md
+  - Home Assistant:
+      - Packages: home-assistant/packages.md
+      - Dashboards: home-assistant/dashboards.md
+      - Felsökning: home-assistant/felsokning.md
+  - Energi:
+      - Översikt: energi/oversikt.md
+      - Tibber och elpriser: energi/tibber.md
+      - EMHASS: energi/emhass.md
+  - Hydromet-integration:
+      - Översikt: hydromet-integration/oversikt.md
+      - MQTT: hydromet-integration/mqtt.md
+      - Regnlogger i Home Assistant: hydromet-integration/regnlogger-i-ha.md
+  - Drift:
+      - Backup: drift/backup.md
+      - Uppdateringar: drift/uppdateringar.md
+      - Felsökning: drift/felsokning.md
+  - Beslut:
+      - Beslutslogg: beslut/index.md
+      - Repo-namn och struktur: beslut/repo-namn-och-struktur.md
+
+theme:
+  name: material
+  language: sv
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
